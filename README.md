@@ -1,4 +1,4 @@
-**Books Scraper 📚✨**
+# Books Scraper 📚✨
 
 Simple, friendly, and reliable scraper for http://books.toscrape.com/.
 Scrapes title, price, rating, availability and the book page link — then saves everything to a CSV so you can analyze or share the data.
@@ -14,7 +14,7 @@ Scrapes title, price, rating, availability and the book page link — then saves
 
 **Run it (3 steps)**
 python -m venv .venv
-# activate .venv (Windows: .venv\Scripts\activate)
+activate .venv (Windows: .venv\Scripts\activate)
 pip install -r requirements.txt
 python scraper.py --start 1 --end 3 --output data/books_data.csv
 
@@ -41,17 +41,6 @@ Then paste the output into this table.
 **What's inside this repo**
 - scraper.py — the scraping script (simple & well-commented)
 - requirements.txt — libraries used
-- data/books_data.csv — scraped output (sample or your real data)
+- data/books_data.csv — scraped output
 - .gitignore — ignores virtualenv and other generated files
 
----
-
-**Want to improve it?**
-- Add --delay between requests to be extra polite.
-- Save JSON or parquet for faster data loading.
-- Add a small test to ensure parsing keeps working when the site changes.
-
----
-
-**License**
-MIT — free to use, tweak and share.
